@@ -12,7 +12,9 @@ This Flutter project is a scalable and feature-rich mobile application that fetc
 6. Error Handling: Robust utilities for handling network requests, exceptions, and formatting issues.
 7. Device Compatibility: Optimized utilities for different devices, ensuring a consistent experience across platforms.
 8. Helper Functions: Utility functions for common operations like pricing calculations, cloud interactions, and local storage management.
+
 #-----------------Folder Structure-------------------
+
 lib/app.dart: Application setup and initialization.
 lib/main.dart: Main entry point for the Flutter app.
 lib/common: Contains reusable widgets such as loaders, custom shapes, and app bars.
