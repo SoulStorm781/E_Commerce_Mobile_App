@@ -1,0 +1,102 @@
+name: af_store
+description: "A new Flutter project."
+
+publish_to: 'none' 
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.0-149.3.beta
+#-----------------------packages-----------------------
+dependencies:
+  flutter:
+    sdk: flutter
+
+#----------------------------utility packages-----------------------
+  
+  http: ^1.2.2
+  intl: ^0.19.0
+  logger: ^2.4.0
+  lottie: ^3.1.2
+  url_launcher: ^6.3.0
+  connectivity_plus: ^6.0.5
+  flutter_native_splash: ^2.4.0
+  smooth_page_indicator: ^1.2.0+3
+  font_awesome_flutter: ^10.7.0
+  shimmer: ^3.0.0
+  image_picker: ^1.1.2
+  cached_network_image: ^3.4.1
+
+#----------------------------icons packages-----------------------
+  iconsax: ^0.0.8 
+  cupertino_icons: ^1.0.6
+#----------------------------state management-----------------------
+  get: ^4.6.6
+  get_storage: ^2.1.1
+
+
+#----------------------------product specific---------------------------
+
+  readmore: ^3.0.0
+  carousel_slider: ^5.0.0 
+  flutter_rating_bar: ^4.0.1
+  google_sign_in: ^6.2.1
+
+#----------------------------firebase---------------------------
+  firebase_core: ^3.4.0
+  firebase_auth: ^5.2.0
+  cloud_firestore: ^5.4.0
+  firebase_storage: ^12.3.0
+
+#-----------------------------web specific------------------------
+  web: ^1.1.0
+  html: ^0.15.4
+  fl_chart: ^0.69.0
+  url_strategy: ^0.3.0
+  
+#----------------------------packages end---------------------------
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+
+
+flutter:
+
+
+  uses-material-design: true
+
+
+  assets:
+    - assets/images/on_boarding_images/
+    - assets/images/authentication_images/
+    - assets/images/banners/
+    - assets/images/products/
+    - assets/images/animations/
+    - assets/images/user/
+    - assets/icons/brands/
+    - assets/icons/payment_methods/ 
+    - assets/icons/categories/
+    - assets/logos/
+
+    #----------------------local fonts-----------------------
+  # fonts:
+  #   - family: Poppins
+  #     fonts:
+  #       - asset: assets/fonts/Poppins-Regular.ttf
+  #       - asset: assets/fonts/Poppins-Bold.ttf
+  #       - asset: assets/fonts/Poppins-ExtraBold.ttf
+  #       - asset: assets/fonts/Poppins-Light.ttf
+  #       - asset: assets/fonts/Poppins-Medium.ttf
+  #       - asset: assets/fonts/Poppins-SemiBold.ttf
+  #       - asset: assets/fonts/Poppins-Thin.ttf
+  #   - family: Roboto
+  #     fonts:
+  #       - asset: assets/fonts/Roboto-Regular.ttf
+  #       - asset: assets/fonts/Roboto-Bold.ttf
+  #       - asset: assets/fonts/Roboto-Italic.ttf
+  #       - asset: assets/fonts/Roboto-Light.ttf
+  #       - asset: assets/fonts/Roboto-Medium.ttf
+  #       - asset: assets/fonts/Roboto-Thin.ttf  
