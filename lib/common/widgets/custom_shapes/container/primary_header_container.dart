@@ -14,7 +14,6 @@ class FPrimaryHeaderWidget extends StatelessWidget {
     return FCurvedEdges(
       child: Container(
         color: FColors.primaryColor,
-        // padding: const EdgeInsets.only(bottom: 0),
         child: Stack(
           children: [
             Positioned(

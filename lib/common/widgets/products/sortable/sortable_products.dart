@@ -6,7 +6,6 @@ import 'package:af_store/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:logger/logger.dart';
 
 class FSortableProducts extends StatelessWidget {
   const FSortableProducts({
@@ -17,11 +16,8 @@ class FSortableProducts extends StatelessWidget {
   final List<ProductModel> products;
   @override
   Widget build(BuildContext context) {
-    final Logger logger = Logger();
     final controller = Get.put(AllProductsController());
     controller.assignProducts(products);
-    logger.i(
-        'Building ProductListWidget with product count: ${controller.products.length}');
     return Column(
       children: [
         ///Dropdown

@@ -26,6 +26,7 @@ class FAppBar extends StatelessWidget implements PreferredSizeWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: FSizes.md),
       child: AppBar(
+        backgroundColor: Colors.transparent,
         automaticallyImplyLeading: false,
         leading: showBackArrow
             ? IconButton(
