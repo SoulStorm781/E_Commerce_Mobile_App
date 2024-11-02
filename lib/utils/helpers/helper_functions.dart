@@ -106,7 +106,7 @@ class FHelperFunctions {
   }
 
   static String getFormattedDate(DateTime date,
-      {String format = 'DD MMM yyyy'}) {
+      {String format = 'dd MMM yyyy'}) {
     return DateFormat(format).format(date);
   }
 

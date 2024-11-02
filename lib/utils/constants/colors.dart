@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 class FColors {
   FColors._();
 // APP basic colors
-  static const Color primaryColor = Color(0xFF4868FF);
+  static const Color primaryColor = Color.fromARGB(255, 29, 119, 112);
+  static const Color brandColor = Color(0xFF4868FF);
   // static const Color primaryColor = Color.fromARGB(255, 235, 197, 73);
   static const Color secondaryColor = Color(0xFFFFE24B);
   static const Color accent = Color(0xFFb0c7ff);
