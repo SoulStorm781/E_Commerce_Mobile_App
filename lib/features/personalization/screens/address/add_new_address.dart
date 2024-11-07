@@ -54,7 +54,7 @@ class AddNewAddressScreen extends StatelessWidget {
                               FValidator.validateEmpty('Street', value),
                           decoration: const InputDecoration(
                             prefixIcon: Icon(Iconsax.building_31),
-                            labelText: 'Steet',
+                            labelText: 'Street',
                           )),
                     ),
                     const SizedBox(width: FSizes.spaceBtwInputFields),
