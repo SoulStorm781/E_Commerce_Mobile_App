@@ -3,6 +3,7 @@ import 'package:af_store/common/widgets/images/f_rounded_images.dart';
 import 'package:af_store/common/widgets/products/product_Cards/product_cart_horizontal.dart';
 import 'package:af_store/common/widgets/shimmer/horizontal_product_shimmer.dart';
 import 'package:af_store/common/widgets/text/section_heading.dart';
+import 'package:af_store/features/shop/controllers/banner_controller.dart';
 import 'package:af_store/features/shop/controllers/category_controller.dart';
 import 'package:af_store/features/shop/models/category_model.dart';
 import 'package:af_store/features/shop/screens/all_products/all_products.dart';
@@ -17,6 +18,7 @@ class SubCategories extends StatelessWidget {
   final CategoryModel category;
   @override
   Widget build(BuildContext context) {
+    final bannercontroller = Get.put(BannerController());
     final controller = CategoryController.instance;
     return Scaffold(
       appBar: FAppBar(
@@ -31,12 +33,23 @@ class SubCategories extends StatelessWidget {
           child: Column(
             children: [
               //Banner
-              const FRoundedImage(
-                width: double.infinity,
-                height: null,
-                imageUrl: FImages.productbanner1,
-                applyImageRadius: true,
-              ),
+              Obx(() {
+                if (bannercontroller.banners.isEmpty) {
+                  return const CircularProgressIndicator(); // Show a loader while fetching
+                } else {
+                  final banner =
+                      bannercontroller.banners.first; // Get the first banner
+                  return FRoundedImage(
+                    width: double.infinity,
+                    height: null,
+                    imageUrl: banner.imageUrl, // Firebase banner URL
+                    applyImageRadius: true,
+                    isNetworkImage: true,
+                    onPressed: () =>
+                        Get.toNamed(banner.targetScreen), // Navigation
+                  );
+                }
+              }),
               const SizedBox(height: FSizes.spaceBtwSections),
 
               // Sub Categories
