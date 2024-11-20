@@ -21,7 +21,7 @@ class FHomeCategories extends StatelessWidget {
       if (categoryController.featuredCategories.isEmpty) {
         return Center(
           child: Text(
-            'No Data Found!',
+            'No Data Founds!',
             style: Theme.of(context)
                 .textTheme
                 .bodyMedium!

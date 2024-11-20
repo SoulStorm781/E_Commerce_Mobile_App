@@ -7,7 +7,6 @@ import 'package:af_store/features/shop/controllers/banner_controller.dart';
 import 'package:af_store/features/shop/controllers/category_controller.dart';
 import 'package:af_store/features/shop/models/category_model.dart';
 import 'package:af_store/features/shop/screens/all_products/all_products.dart';
-import 'package:af_store/utils/constants/image_strings.dart';
 import 'package:af_store/utils/constants/sizes.dart';
 import 'package:af_store/utils/helpers/cloud_helper_functions.dart';
 import 'package:flutter/material.dart';
